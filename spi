@@ -29,7 +29,7 @@ rhel5 () {
 	htpasswd -c /etc/squid/passwd $usrn
 	case $arch in
 			32)
-					wget -O /etc/squid/squid.conf https://raw.githubusercontent.com/hidden-refuge/squid-proxy-installer/master/spi-rhel5632.conf --no-check-certificate;;
+					wget -O /etc/squid/squid.conf https://raw.githubusercontent.com/armaa000/proxy/master/spi-rhel5632.conf --no-check-certificate;;
 			64)
 					wget -O /etc/squid/squid.conf https://raw.githubusercontent.com/armaa000/proxy/master/spi-rhel5664.conf --no-check-certificate;;
 	esac
