@@ -83,7 +83,7 @@ rhel7 () {
 		htpasswd -c /etc/squid/passwd $usrn
 	fi
 	wget -O /etc/squid/squid.conf https://raw.githubusercontent.com/armaa000/proxy/master/spi-rhel7.conf --no-check-certificate
-	systemctl restart squid.service && systemctl enable squid.service
+	systemctl restart squid.service
 	csfsetup
 	echo
 	echo "squid proxy installed"
